@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset `button` and button-style `input` default styles */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button;
+    /* for input */
+    -webkit-user-select: none;
+    /* for button */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: none;
+    line-height: 1;
+    /* Browsers have different default form fonts */
+    font-size: 13px;
+    font-family: Arial;
+}
+
+/* Remove the stupid outer glow in Webkit */
+
+input:focus {
+    outline: 0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+
+/* All of our custom controls should be what we expect them to be */
+
+input,
+textarea {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Button Controls
+-----------------------------------------------*/
+
+input[type=checkbox],
+input[type=radio] {
+    width: 13px;
+    height: 13px;
+}
+
+/* Search Input
+-----------------------------------------------*/
+
+/* Make webkit render the search input like a normal text field */
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+
+::-webkit-search-decoration {
+    display: none;
+}
+
+/* Buttons
+-----------------------------------------------*/
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+    /* Fix IE7 display bug */
+    overflow: visible;
+    width: auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+
+::-webkit-file-upload-button {
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+
+textarea {
+    /* Move the label to the top */
+    vertical-align: top;
+    /* Turn off scroll bars in IE unless needed */
+    overflow: auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+
+select[multiple] {
+    /* Move the label to the top */
+    vertical-align: top;
+}
+
+html,
+body {
+   /* overflow-x: hidden;*/
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+}
+
+body * {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+body p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+body button,
+body a {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+body input {
+    text-decoration: none;
+    outline: none;
+}
+
+body textarea {
+    resize: none;
+}
+
+body textarea,
+body input {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body input[type="date"]::-webkit-calendar-picker-indicator,
+body input[type="date"]::-webkit-inner-spin-button,
+body input[type="date"]::-webkit-input-placeholder {
+    display: none;
+    visibility: hidden;
+}
+
+body input,
+body textarea,
+body button,
+body select,
+body a,
+body i,
+body label {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* This used to work for the parent element of button divs */
+
+/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
+
+*::-webkit-media-controls-panel {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+*::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+/* fot IE */
+input::-ms-clear {
+    display: none;
+}
