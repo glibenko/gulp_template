@@ -1,3 +1,4 @@
+// plane gulp
 import gulp from 'gulp';
 import concat from 'gulp-concat';
 import autoprefixer from 'gulp-autoprefixer';
@@ -39,7 +40,6 @@ gulp.task('fonts', () => {
 gulp.task('allCss', () => {
   gulp.src([
     'app/css/reset.css',
-    'app/css/loader.css',
     'app/css/style.css',
   ])
     .pipe(concat('main.css'))
